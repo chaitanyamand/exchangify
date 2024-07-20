@@ -5,7 +5,7 @@ const TOTAL_BIDS = 100;
 const TOTAL_ASK = 100;
 const MARKET = "TATA_INR";
 const USER_ID = "5";
-const MAX_RETRIES = 3;
+const MAX_RETRIES = 5;
 const RETRY_DELAY = 1000;
 const jwtToken = process.env.JWT_TOKEN_MM;
 
