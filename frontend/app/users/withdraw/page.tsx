@@ -116,7 +116,7 @@ const Withdraw = ()=>{
             <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
               Current Balance
             </label>
-            <p className="text-lg font-medium">INR {userBalance}</p>
+            <p className="text-lg font-medium">INR {userBalance.toFixed(3)}</p>
           </div>
         </div>
       </div>
