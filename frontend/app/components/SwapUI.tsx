@@ -184,7 +184,7 @@ export function SwapUI({ market,balance ,quoteBal}: {market: string,balance:numb
                     if(fetchedBalance==-60) signIn();
                     setUserBalance(fetchedBalance);
                   }
-                  else
+                  else if(activeTab=="sell")
                   {
                     const fetchedQuoteBalance=await getBalance(session?.user?.jwtToken,"TATA");
                     if(fetchedQuoteBalance==-60) signIn();
@@ -226,7 +226,7 @@ export function SwapUI({ market,balance ,quoteBal}: {market: string,balance:numb
                         <div className="flex flex-col gap-3">
                             <div className="flex items-center justify-between flex-row">
                                 <p className="text-xs font-normal text-baseTextMedEmphasis">Available Balance</p>
-                                <p className="font-medium text-xs text-baseTextHighEmphasis">{activeTab=="buy"?`INR ${userBalance}`  :`TATA ${quoteBalance}`} </p>
+                                <p className="font-medium text-xs text-baseTextHighEmphasis">{activeTab=="buy"?`INR ${userBalance.toFixed(3)}`  :`TATA ${quoteBalance.toFixed(3)}`} </p>
                             </div>
                         </div>
                         {type=="limit"?<div className="flex flex-col gap-2">
