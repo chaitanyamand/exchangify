@@ -11,7 +11,7 @@ export default function Landing() {
           Seamless Asset Exchange 
         </div>
         <p className="mb-6 text-muted-foreground">
-          Exchangify offers a secure and user-friendly platform for all your cryptocurrency trading needs.
+          Exchangify offers a secure and user-friendly platform for all your asset trading needs.
         </p>
         <LandingButton/>
       </div>
