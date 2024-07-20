@@ -1,4 +1,4 @@
-import { CANCEL_ORDER, CREATE_ORDER, GET_BALANCE, GET_DEPTH, GET_BALANCE_QUOTE, GET_OPEN_ORDERS, ON_RAMP, DEPOSIT, WITHDRAW } from ".";
+import { CANCEL_ORDER, CREATE_ORDER, GET_BALANCE, GET_DEPTH, GET_BALANCE_QUOTE, GET_OPEN_ORDERS, DEPOSIT, WITHDRAW } from ".";
 
 export type MessageToEngine =
   | {
@@ -16,14 +16,6 @@ export type MessageToEngine =
       data: {
         orderId: string;
         market: string;
-      };
-    }
-  | {
-      type: typeof ON_RAMP;
-      data: {
-        amount: string;
-        userId: string;
-        txnId: string;
       };
     }
   | {
