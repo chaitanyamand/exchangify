@@ -14,7 +14,7 @@ async function initializeUserDB() {
             email VARCHAR(50),
             password VARCHAR
         );
-        ALTER SEQUENCE users_id_seq RESTART WITH 10;`);
+        `);
 
   await clientUserDB.end();
   console.log("User Database initialized successfully");
