@@ -2,7 +2,7 @@
     "name": "top-level-project",
     "version": "1.0.0",
     "scripts": {
-      "docker:up": "docker-compose up -d",
+      "docker:up": "cd docker && docker-compose up -d",
       "db:install": "cd db && npm install",
       "db:refresh:views": "cd db && npm run refresh:views",
       "db:dev": "cd db && npm run dev",
